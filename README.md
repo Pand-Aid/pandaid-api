@@ -12,7 +12,7 @@ Please join us at the slack group [INSERT LINK]
 - python 3.7 or higher 
 - install [Docker](https://docs.docker.com/docker-for-mac/install/)  
 
-## Homebrew installations:
+## Mac Homebrew installations:
 
 ```bash
 brew install docker-compose
@@ -31,8 +31,14 @@ then start it with `docker-compose up`
 
 Then get a shell in the docker container and create a superuser
 
+### mac
 ```bash
 $ docker exec -ti pandaid-api_web_1 /bin/bash
+:/code# python manage.py createsuperuser --email admin@example.com --username admin
+```
+### windows
+```bash
+$ winpty docker exec -it pandaid-api_web_1 //bin/sh
 :/code# python manage.py createsuperuser --email admin@example.com --username admin
 ```
 
