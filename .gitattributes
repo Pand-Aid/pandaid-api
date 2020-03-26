@@ -1,1 +1,3 @@
-:set fileformat=unix
+*.yml text
+*.py text
+text eol=lf
