@@ -10,33 +10,51 @@ Please join us at the slack group [INSERT LINK]
 # Prerequisites
 
 - python 3.7 or higher 
-- install [Docker](https://docs.docker.com/docker-for-mac/install/)  
+- install [Docker](https://docs.docker.com/)  
 
-## Mac Homebrew installations:
-
-```bash
-brew install docker-compose
-```
 
 # Local Development
+All commands in bash regardless of operating system unless otherwise noted
 
-## setup
 
+## mac
+
+### Homebrew installations:
+
+```bash
+$ brew install docker-compose
+```
+### setup
 The first time you work on this, build the docker image:
 ```bash
 docker-compose build
 ```
 
-then start it with `docker-compose up`
+Then start it with 
+```bash
+docker-compose up
+```
 
 Then get a shell in the docker container and create a superuser
 
-### mac
-```bash
+```
 $ docker exec -ti pandaid-api_web_1 /bin/bash
 :/code# python manage.py createsuperuser --email admin@example.com --username admin
 ```
-### windows
+## windows
+### setup
+The first time you work on this, build the docker image:
+```bash
+docker-compose build
+```
+
+Then start it with 
+```bash
+docker-compose up
+```
+
+Then get a shell in the docker container and create a superuser
+
 ```bash
 $ winpty docker exec -it pandaid-api_web_1 //bin/sh
 :/code# python manage.py createsuperuser --email admin@example.com --username admin
