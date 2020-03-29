@@ -12,6 +12,7 @@ class Client(models.Model):
     def __str__(self):
         return self.name
 
+
 class Location(models.Model):
 
     title=models.CharField(max_length=255, blank=False)
@@ -28,6 +29,7 @@ class Location(models.Model):
     def __str__(self):
         return self.title
 
+
 class ClientNeed(models.Model):
 
     client=models.ForeignKey("Client", on_delete=models.CASCADE) 
@@ -36,19 +38,22 @@ class ClientNeed(models.Model):
     needed=models.DateTimeField(default=tz.now, blank=False, null=False)
     location=models.ForeignKey("Location", on_delete=models.CASCADE)
 
+
 class Need(models.Model):
 
     title=models.CharField(max_length=255, blank=False)
     category=models.CharField(max_length=255, blank=False)
+    items = models.ManyToManyField("Item", through='ItemNeed')
 
     def __str__(self):
         return self.title
 
-class ItemNeed(models.Model):
 
+class ItemNeed(models.Model):
     need=models.ManyToManyField("Need")
     item=models.ManyToManyField("Item")
     quantity=models.IntegerField(blank=False, null=False)
+
 
 class Item(models.Model):
 
