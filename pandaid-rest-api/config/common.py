@@ -24,7 +24,7 @@ class Common(Configuration):
 
         # Your apps
         'pandaid-rest-api.users',
-        'pandaid-rest-api',
+        'pandaid_base',
 
     )
 
