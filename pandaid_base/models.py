@@ -52,10 +52,18 @@ class ItemNeed(models.Model):
     item = models.ForeignKey("Item", on_delete=models.CASCADE)
     quantity = models.IntegerField(blank=False, null=False)
 
+    def __str__(self):
+        return f'{self.quantity} of {self.item.title} for {self.need.title}'
+
+
 
 class Item(models.Model):
     title = models.CharField(max_length=255, blank=False)
     category = models.CharField(max_length=255, blank=False)
+
+    def __str__(self):
+        return self.title
+
 
 
 class ServiceNeed(models.Model):
