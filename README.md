@@ -60,7 +60,17 @@ $ winpty docker exec -it pandaid-api_web_1 //bin/sh
 :/code# python manage.py createsuperuser --email admin@example.com --username admin
 ```
 
-You can get an authentication token by sending a POST request to   `http://localhost:8000/api-token-auth/` with the superuser credentials in a formdata labeled `username` and `password`. # TODO be more clear and say how to use this 
+You can get an authentication token by sending a POST request to `http://localhost:8000/api-token-auth/` with the superuser credentials in a formdata labeled `username` and `password`.
+
+For example, you can send the POST request as a cURL request:
+```
+curl --location --request POST 'localhost:8000/api-token-auth/' \
+--header 'Content-Type: multipart/form-data' \
+--form 'username=<username>' \
+--form 'password=<password>'
+```
+or via an app such as Postman.
+
 ## running
 
 Start the dev server for local development:
