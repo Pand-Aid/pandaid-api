@@ -36,6 +36,6 @@ Visual Studio Code has some pretty helpful extensions that provide a bit more vi
 ![image](imgs/attachVSCode.png)
 8. Now click "Open Folder" and replace "/root/" with "/" or "." and press "OK".
 ![image](imgs/selectFolder.png)
-9. I've expanded the "code" folder in the sidebar, as well as brought up a terminal. This terminal also is within the container itself. Now you can explore everything that's happening inside the container! It's good to note that files that are mounted as a volume will persist across the OS and Container. Otherwise, changes to the container will only remain as long as the container exists (I think you can start/stop all you want, but if you re-build the changes disappear).
+9. I've expanded the "code" folder in the sidebar, as well as brought up a terminal. This terminal also is within the container itself. Now you can explore everything that's happening inside the container! It's good to note that files that are mounted as a volume will persist across the OS and container. Otherwise, changes to the container will only remain as long as the container exists (I think you can start/stop all you want, but if you re-build the changes disappear).
 ![image](./imgs/codeInContainer.png)
-10. There are more options within the Docker tab that are worth exploring, Starting, Stopping, Removing, Checking logs etc. A lot of the commands are more visual representations of command line tools, but I find them helpful!
+10. There are more options within the Docker tab that are worth exploring: Starting, Stopping, Removing, Logs, etc. A lot of the commands are visually ways to execute `docker` CLI commands, but I find them helpful to better understand how Docker works!
