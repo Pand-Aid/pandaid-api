@@ -28,7 +28,7 @@ Visual Studio Code has some pretty helpful extensions that provide a bit more vi
 ![image](./imgs/RootFolder.png)
 4. If you haven't done so before, run `docker-compose build` from the terminal to build your `docker` containers. If the terminal screen isn't up, press "control + ~" to bring it up, or "Terminal" -> "New" from the menu bar. This command will take a good bit of time the first time as images are downloaded and built. You'll see them under "Images" on the sidebar.
 ![image](imgs/postBuild.png)
-5. Now running `docker-compose up` will start the images creating containers (or pull down an hosted image like postgres and start it). The containers will appear under "Containers" on the sidebar. The green triangles indicates the containers are running, red squares will indicate they've stopped.
+5. Now running `docker-compose up` will start the images creating containers (or pull down an hosted image like `postgres` and start it). The containers will appear under "Containers" on the sidebar. The green triangles indicates the containers are running, red squares will indicate they've stopped.
 ![image](imgs/runningContainers.png)
 6. If you right click on a container, you'll see additional options that are helpful. The first I want to highlight is "Attach Shell". This is actually running a `docker` command to get the shell in the container. By attaching a shell, you can open up a terminal inside one of your containers. In this case, I've opened a terminal in the `web` container, where the Django backend is running. This is another way to run `manage.py` or just explore what the working container actually has access to.
 ![image](imgs/attachShell.png)
