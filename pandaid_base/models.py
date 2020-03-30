@@ -41,14 +41,15 @@ class ClientNeed(models.Model):
 class Need(models.Model):
     title = models.CharField(max_length=255, blank=False)
     category = models.CharField(max_length=255, blank=False)
+    items = models.ManyToManyField("Item", through="ItemNeed")
 
     def __str__(self):
         return self.title
 
 
 class ItemNeed(models.Model):
-    need = models.ManyToManyField("Need")
-    item = models.ManyToManyField("Item")
+    need = models.ForeignKey("Need", on_delete=models.CASCADE)
+    item = models.ForeignKey("Item", on_delete=models.CASCADE)
     quantity = models.IntegerField(blank=False, null=False)
 
 
