@@ -109,3 +109,5 @@ venv.bak/
 
 # misc editor and filesystem stuff
 .idea
+
+postgres-data/
