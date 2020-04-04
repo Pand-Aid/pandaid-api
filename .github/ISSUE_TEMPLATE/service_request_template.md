@@ -6,7 +6,16 @@ assignees: ''
 labels: service-request
 ---
 
-Instructions: Replace text below with details corresponding to your issue
+<!--
+  Please fill out each section as best you can, just a few words is fine. The issue ticket is intended to open/begin the conversation.
+
+  Useful Links:
+  - How to Contribute: hhttps://github.com/Pand-Aid/pandaid-api/docs/development/contributing.md
+  - How to File an Issue: https://github.com/Pand-Aid/pandaid-api/docs/development/how-to-file-issue.md/
+
+  Before opening a new issue, please search existing issues:  https://github.com/Pand-Aid/pandaid-api/issues
+
+-->
 
 **TEAM NAME:** Enter Name  
 **PRIORITY (1-5):** Enter your priority  
@@ -16,7 +25,7 @@ PRIORITY KEY - DELETE BEFORE SAVING ISSUE
 P1: This is a production outage and needs attention ASAP  
 P2: This is preventing development  
 P3: This needs to be fixed but development isn't blocked  
-P4: I need assistance at some point but there is a sufficient workaround or issue is low priority
+P4: I need assistance at some point but there is a sufficient workaround or issue is low priority  
 P5: This is an idea that doesn't pertain to an active task  
 
 **DO NOT INCLUDE ANY SECRETS IN THIS REQUEST. IT IS PUBLICLY ACCESSIBLE**
@@ -33,10 +42,13 @@ P5: This is an idea that doesn't pertain to an active task
 
 > What are the steps you followed to create this error.   
 > Be specific. IE:
-> 1. I made a request to https://www.exampleapiservice.com  
+> 1. I made a `GET` request to https://www.exampleapiservice.com  
 > 2. I waited for response  
-> Expected: I got data  
-> Actual: I got unicorns  
+> **Expected:**  
+> I got data  
+>
+> **Actual:**  
+>I got unicorns  
 
 **Code Snippets**
 
