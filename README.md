@@ -3,13 +3,13 @@
 [![Build Status](https://travis-ci.org/Pand-Aid /pandaid-api.svg?branch=master)](https://travis-ci.org/Pand-Aid /pandaid-api)
 [![Built with](https://img.shields.io/badge/Built_with-Cookiecutter_Django_Rest-F7B633.svg)](https://github.com/agconti/cookiecutter-django-rest)
 
-REST API backend for Pand-Aid pandemic response app. Check out the project's [main page](hhttps://github.com/Pand-Aid/Main).
+REST API backend for Pand-Aid pandemic response app.
 
-Please join us at the slack group [INSERT LINK]
+Check out the project's [Main README](hhttps://github.com/Pand-Aid/Main) for more information.
 
 # Prerequisites
 
-- python 3.7 or higher 
+- python 3.7 or higher
 - install [Docker](https://docs.docker.com/)  
 
 
@@ -30,7 +30,7 @@ The first time you work on this, build the docker image:
 docker-compose build
 ```
 
-Then start it with 
+Then start it with
 ```bash
 docker-compose up
 ```
@@ -48,7 +48,7 @@ The first time you work on this, build the docker image:
 docker-compose build
 ```
 
-Then start it with 
+Then start it with
 ```bash
 docker-compose up
 ```
@@ -85,3 +85,13 @@ Run a command inside the docker container:
 ```bash
 docker-compose run --rm web [command]
 ```
+
+## Contributing
+
+Check out our [Contribution Guidelines](./docs/development/contributing.md) if you are interested in helping with this project
+
+## How to File an Issue
+
+Notice an issue in our code or documentation? Is there a new feature you would like to see implemented?
+
+As a first step checkout our [How To File an Issue](./docs/development/how-to-file-issue.md) guide
