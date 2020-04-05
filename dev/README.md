@@ -19,9 +19,9 @@ The `docker-compose run` version is also available in the script (but commented 
         * Brings up the help for `psql` to see additional options available.
 
 ## win
-### `manage_py.bat <arg>`
+### `manage_py.bat <args>`
 * Can be run from within the `\dev\win` folder directly or from the top level repo with `dev\win\manage_py.bat`
-* Runs `manage.py` within the `pandaid-api_web_1` container, passing through `arg`. 
+* Runs `manage.py` within the `pandaid-api_web_1` container, passing through `args`. 
     * `manage_py.bat -h`
         * Brings up the help for `manage.py`.
     * `manage_py.bat shell`
