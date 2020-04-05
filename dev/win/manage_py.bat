@@ -1,1 +1,1 @@
-docker-compose run --rm web python manage.py %1
+docker-compose run --rm web python manage.py %*
