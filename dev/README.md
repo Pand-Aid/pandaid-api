@@ -28,7 +28,7 @@ The `docker-compose run` version is also available in the script (but commented 
         * Opens Django's pre-configured IPython console within the `pandaid-api_web_1` container. 
 
 ### `run_psql.bat <args>`
-* Can be run from within the `/dev/win` folder directly or from the top level repo with `dev/win/run_psql.bat`
+* Can be run from within the `\dev\win` folder directly or from the top level repo with `dev\win\run_psql.bat`
 * Runs `psql` within the `pandaid-api_postgres_1` container, passing through `args`. "`-U postgres`" is passed within the script to have the correct username.
     * `run_psql.bat --help`
         * Brings up the help for `psql` to see additional options available.
