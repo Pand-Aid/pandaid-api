@@ -1,23 +1,37 @@
 # Dev Tools
-A collections of helper utilities to assist with common tasks.
+A collections of helper utilities to assist with common tasks. These tools run `docker exec` commands, which require a container to be up and running to attach to (as a result of the `docker-compose up` command). 
+
+The `docker-compose run` version is also available in the script (but commented out). This version would spin up it's own container even if one is already running.
 
 ## mac
-### `manage_py.sh <arg>`
+### `manage_py.sh <args>`
 * Can be run from within the `/dev/mac` folder directly or from the top level repo with `dev/mac/manage_py.sh`
-* Runs `manage.py` within the `web` container, passing through `arg`. 
+* Runs `manage.py` within the `pandaid-api_web_1` container, passing through `args`. 
     * `manage_py.sh -h`
         * Brings up the help for `manage.py`.
     * `manage_py.sh shell`
-        * Opens Django's pre-configured IPython console within the `web` container. 
+        * Opens Django's pre-configured IPython console within the `pandaid-api_web_1` container. 
+
+### `run_psql.sh <args>`
+* Can be run from within the `/dev/mac` folder directly or from the top level repo with `dev/mac/run_psql.sh`
+* Runs `psql` within the `pandaid-api_postgres_1` container, passing through `args`. "`-U postgres`" is passed within the script to have the correct username.
+    * `run_psql.sh --help`
+        * Brings up the help for `psql` to see additional options available.
 
 ## win
 ### `manage_py.bat <arg>`
 * Can be run from within the `\dev\win` folder directly or from the top level repo with `dev\win\manage_py.bat`
-* Runs `manage.py` within the `web` container, passing through `arg`. 
+* Runs `manage.py` within the `pandaid-api_web_1` container, passing through `arg`. 
     * `manage_py.bat -h`
         * Brings up the help for `manage.py`.
     * `manage_py.bat shell`
-        * Opens Django's pre-configured IPython console within the `web` container. 
+        * Opens Django's pre-configured IPython console within the `pandaid-api_web_1` container. 
+
+### `run_psql.bat <args>`
+* Can be run from within the `/dev/win` folder directly or from the top level repo with `dev/win/run_psql.bat`
+* Runs `psql` within the `pandaid-api_postgres_1` container, passing through `args`. "`-U postgres`" is passed within the script to have the correct username.
+    * `run_psql.bat --help`
+        * Brings up the help for `psql` to see additional options available.
 
 ## VSCode Tools
 Visual Studio Code has some pretty helpful extensions that provide a bit more visual interaction with Docker containers. 
