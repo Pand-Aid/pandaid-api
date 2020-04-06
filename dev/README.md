@@ -3,9 +3,9 @@ A collections of helper utilities to assist with common tasks. These tools run `
 
 The `docker-compose run` version is also available in the script (but commented out). This version would spin up it's own container even if one is already running.
 
-## mac
+## mac / linux
 ### `manage_py.sh <args>`
-* Can be run from within the `/dev/mac` folder directly or from the top level repo with `dev/mac/manage_py.sh`
+* Can be run from within the `/dev/mac-or-linux` folder directly or from the top level repo with `dev/mac-or-linux/manage_py.sh`
 * Runs `manage.py` within the `pandaid-api_web_1` container, passing through `args`. 
     * `manage_py.sh -h`
         * Brings up the help for `manage.py`.
@@ -13,7 +13,7 @@ The `docker-compose run` version is also available in the script (but commented 
         * Opens Django's pre-configured IPython console within the `pandaid-api_web_1` container. 
 
 ### `run_psql.sh <args>`
-* Can be run from within the `/dev/mac` folder directly or from the top level repo with `dev/mac/run_psql.sh`
+* Can be run from within the `/dev/mac-or-linux` folder directly or from the top level repo with `dev/mac-or-linux/run_psql.sh`
 * Runs `psql` within the `pandaid-api_postgres_1` container, passing through `args`. "`-U postgres`" is passed within the script to have the correct username.
     * `run_psql.sh --help`
         * Brings up the help for `psql` to see additional options available.
